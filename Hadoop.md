@@ -14,11 +14,9 @@ TaskTracker：
 
 TaskTracker持续不断地与JobTracker通信，给他发送“心跳”，如果没有心跳说明从节点以崩溃，，进而要重新提交相应的任务到集群的其他节点中。
 
-![](image1.png){width="3.9593569553805774in"
-height="2.584000437445319in"}
+![](image1.png)
 
-![](image2.png){width="3.826363735783027in"
-height="3.093036964129484in"}
+![](image2.png)
 
 SSH协议：
 
@@ -153,15 +151,13 @@ InputFormat：
 
 Hadoop分割和读取输入文件的方式被定义在InputFormat接口的一个实现中。TextInputFormat是InputFormat的默认实现。
 
-![](media/image3.png){width="6.520018591426072in"
-height="3.5516393263342083in"}
+![](image3.png)
 
 OutputFormat：
 
 当MapReduce输出数据到文件时，使用的是OutputFormat类，它与InputFormat类相似。因为每个reducer仅需将它的输出写入自己的文件中，输出无需分片。输出文件放在一个公用目录中，通常命名为part-nnnnn，这里的nnnnn是reducer的分区ID。
 
-![](media/image4.png){width="6.68666447944007in"
-height="1.8122736220472442in"}
+![](image4.png)
 
 编写Hadoop基础程序：
 
@@ -169,8 +165,7 @@ height="1.8122736220472442in"}
 
 **第一个程序将读取的专利引用数据并对它进行倒排，对于每一个专利，我们希望找到那些引用它的专利进行合并。**
 
-![](media/image5.png){width="1.9679997812773404in"
-height="2.1012904636920386in"}
+![](image5.png)
 
 图中4539112引用了10000.
 
@@ -277,11 +272,9 @@ mapred.reduce.tasks=0将reducer的数目设置为0.
 Bin/Hadoop jar playground/MyJob.jar MyJob –D mapred.reduce.tasks=0
 input/cite75\_99.txt output
 
-![](media/image6.png){width="7.268055555555556in"
-height="1.4701388888888889in"}
+![](image6.png)
 
-![](media/image7.png){width="7.268055555555556in"
-height="1.073611111111111in"}
+![](image7.png)
 
 Hadoop的Streaming：
 
