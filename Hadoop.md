@@ -14,10 +14,10 @@ TaskTracker：
 
 TaskTracker持续不断地与JobTracker通信，给他发送“心跳”，如果没有心跳说明从节点以崩溃，，进而要重新提交相应的任务到集群的其他节点中。
 
-![](file:///media/image1.png){width="3.9593569553805774in"
+![](file:///C:/Users/Cheng/Pictures/media/image1.png){width="3.9593569553805774in"
 height="2.584000437445319in"}
 
-![](file:///media/image2.png){width="3.826363735783027in"
+![](file:///C:/Users/Cheng/Pictures/media/image2.png){width="3.826363735783027in"
 height="3.093036964129484in"}
 
 SSH协议：
